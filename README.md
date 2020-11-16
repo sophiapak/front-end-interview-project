@@ -1,7 +1,14 @@
 
 ## Getting Started
 
-First, run the development server:
+First, install packages via NPM:
+```bash
+    npm install
+```
+
+(We currently use node version v12.13.1, so all packages _should_ run within that verison)
+
+Second, run the development server:
 
 ```bash
 npm run dev
