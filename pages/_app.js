@@ -1,7 +1,14 @@
-import '../styles/globals.css'
+import React from "react";
+import { GlobalStyles } from "../components";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const App = ({ Component, pageProps }) => {
+  return (
+    <React.Fragment>
+      {/* Font styles and basic CSS Reset */}
+      <GlobalStyles />
+      <Component {...pageProps} />
+    </React.Fragment>
+  );
+};
 
-export default MyApp
+export default App;
