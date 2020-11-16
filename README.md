@@ -23,10 +23,13 @@ You will find `styled-components` already installed, this is the preferred metho
 
 ## What you'll be doing
 
-- Investigate attatched comp to see what your final results should look like
+- Investigate the comp: [https://www.figma.com/file/tFhYREeWNPh4F0BqeycV3k/Coding-Test](https://www.figma.com/file/tFhYREeWNPh4F0BqeycV3k/Coding-Test)
 - Scaffold app to your liking
 - Run GET on `https://api.foxtrotchicago.com/v5/inventory/aisles/224/items?store_id=6` to retrieve products and groups
 - Whatever else you think is cool! Don't spend an inordinate amount of time on this, but please do highlight your skills!
+
+## Running into issues?
+- REACH OUT, just like on the job we're always here to help. Feel free to email anytime: kmcdonald@foxtrotco.com
 
 ## Learn More about Next.js
 
