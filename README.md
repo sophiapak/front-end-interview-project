@@ -3,7 +3,7 @@
 
 First, install packages via NPM:
 ```bash
-    npm install
+npm install
 ```
 
 (We currently use node version v12.13.1, so all packages _should_ run within that verison)
