@@ -8,6 +8,7 @@ const HeaderWrapper = styled.header`
   height: 56px;
   width: 100%;
   top: 0;
+  left: 0;
   background: #121212;
   z-index: 1;
 `;
