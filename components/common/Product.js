@@ -9,7 +9,7 @@ const ProductWrapper = styled.div`
   flex-direction: column;
   margin: 0 3px 18px 3px;
 
-  @media (min-width: 900px) {
+  @media (min-width: 768px) {
     margin: 0 11px 18px 11px;
   }
 

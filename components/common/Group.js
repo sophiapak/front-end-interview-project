@@ -6,7 +6,7 @@ const GroupWrapper = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 900px) {
+  @media (min-width: 768px) {
     width: 950px;
     margin: 0 auto;
   }
@@ -22,7 +22,7 @@ const GroupWrapper = styled.div`
     line-height: 32px;
     margin: 0 0 16px 16px;
 
-    @media (min-width: 900px) {
+    @media (min-width: 768px) {
       margin: 0 0 16px 12px;
     }
   }
@@ -32,7 +32,7 @@ const GroupWrapper = styled.div`
     flex-wrap: wrap;
     margin: 0 13px 0 13px;
 
-    @media (min-width: 376px) {
+    @media (min-width: 768px) {
       margin: 0 auto;
     }
   }

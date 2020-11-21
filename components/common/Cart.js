@@ -9,7 +9,7 @@ const ShoppingCart = styled.div`
     margin: auto 0 auto 0;
   }
 
-  @media (min-width: 376px) {
+  @media (min-width: 768px) {
     margin: 0 37px 0 0;
   }
 `;

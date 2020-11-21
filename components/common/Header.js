@@ -28,7 +28,7 @@ const MobileMenuIcon = styled.div`
     width: 100%;
   }
 
-  @media (min-width: 776px) {
+  @media (min-width: 768px) {
     display: none;
   }
 `;
@@ -49,7 +49,7 @@ const Menu = styled.nav`
     margin: 0 42px 0 0;
   }
 
-  @media (min-width: 776px) {
+  @media (min-width: 768px) {
     display: flex;
     background: none;
     left: initial;
