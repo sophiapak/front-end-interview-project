@@ -1,4 +1,5 @@
-import Head from "next/head";
+import Head from 'next/head';
+import { Header } from '../components';
 
 const Index = () => {
   return (
@@ -8,6 +9,7 @@ const Index = () => {
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://use.typekit.net/zdz0zoa.css" />
       </Head>
+      <Header />
       <main>
         <h1>Welcome to the Foxtrot front-end coding project</h1>
         <p>
