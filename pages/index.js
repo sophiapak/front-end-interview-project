@@ -1,10 +1,15 @@
 import Head from 'next/head';
 import styled from 'styled-components';
-import { Hero, PageTitle, Group, Footer } from '../components';
+import { Header, Hero, Group, Footer } from '../components';
 
-const Offset = styled.div`
-  height: 56px;
+const Main = styled.main`
+  margin: 56px 0 0 0;
   width: 100%;
+
+  @media (min-width: 768px) {
+    width: 950px;
+    margin: 0 auto;
+  }
 `;
 
 const Index = ({ groups }) => {
@@ -15,10 +20,11 @@ const Index = ({ groups }) => {
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://use.typekit.net/zdz0zoa.css" />
       </Head>
-      <Offset />
-      <Hero />
-      <PageTitle />
-      <Group products={groups} />
+      <Header />
+      <Main>
+        <Hero />
+        <Group products={groups} />
+      </Main>
       <Footer />
     </div>
   );

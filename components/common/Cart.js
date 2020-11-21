@@ -6,11 +6,12 @@ const ShoppingCart = styled.div`
   display: flex;
 
   #shopping-cart {
-    margin: auto 0 auto 0;
+    margin: auto 0 auto auto;
   }
 
   @media (min-width: 768px) {
     margin: 0 37px 0 0;
+    width: 208.125px;
   }
 `;
 

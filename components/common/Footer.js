@@ -7,6 +7,7 @@ const FooterWrapper = styled.footer`
   height: 146px;
   display: flex;
   flex-direction: column;
+  width: 100%;
 
   #footer-menu {
     margin: 32px auto;
