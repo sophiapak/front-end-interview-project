@@ -8,12 +8,14 @@ const PageTitleWrapper = styled.div`
     font-weight: 600;
     font-size: 40px;
     line-height: 48px;
+    margin: 20px 0 0 0;
   }
 
   > p {
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
+    margin: 8px 0 48px 0;
   }
 `;
 

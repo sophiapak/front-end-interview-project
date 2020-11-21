@@ -1,29 +1,41 @@
 import React from 'react';
 import styled from 'styled-components';
+import Product from './Product';
 
 const GroupWrapper = styled.div`
   margin: 0 16px;
+  display: flex;
+  flex-direction: column;
 
-  > h3 {
+  .group-name {
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
+    margin: 0 0 16px 0;
+  }
+
+  .products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 `;
 
 export function Group({ products }) {
   function generateProductGroups() {
-    console.log(products);
     return products.map((group) => {
-      console.log(group.name);
-      return (
-        <div key={group.id}>
-          <h3>{group.name}</h3>
-          {group.products.map((product) => {
-            return <h6>{product.title}</h6>;
-          })}
-        </div>
-      );
+      if (group.products.length >= 1) {
+        return (
+          <div key={group.id}>
+            <h3 className="group-name">{group.name}</h3>
+            <div className="products-container">
+              {group.products.map((product) => {
+                return <Product data={product} />;
+              })}
+            </div>
+          </div>
+        );
+      }
     });
   }
 

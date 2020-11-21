@@ -7,3 +7,4 @@ export * from './common/Hero';
 export * from './common/PageTitle';
 export * from './common/Group';
 export * from './common/Footer';
+// export * from './common/Product';
