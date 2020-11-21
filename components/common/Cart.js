@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export function Cart() {
   return (
-    <>
+    <React.Fragment>
       <svg
         width="18"
         height="18"
@@ -24,6 +24,6 @@ export function Cart() {
           stroke-linejoin="round"
         />
       </svg>
-    </>
+    </React.Fragment>
   );
 }

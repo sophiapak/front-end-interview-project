@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Header } from '../components';
+import { Header, Hero, PageTitle } from '../components';
 
 const Index = () => {
   return (
@@ -10,12 +10,9 @@ const Index = () => {
         <link rel="stylesheet" href="https://use.typekit.net/zdz0zoa.css" />
       </Head>
       <Header />
+      <Hero />
       <main>
-        <h1>Welcome to the Foxtrot front-end coding project</h1>
-        <p>
-          Please take a look at the README before staring and feel free to reach
-          out with any questions or concerns!
-        </p>
+        <PageTitle />
       </main>
     </div>
   );

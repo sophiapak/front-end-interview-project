@@ -9,6 +9,7 @@ const HeaderWrapper = styled.header`
   width: 100%;
   top: 0;
   background: #121212;
+  z-index: 1;
 `;
 
 const MobileMenuIcon = styled.div`
