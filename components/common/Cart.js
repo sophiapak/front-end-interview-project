@@ -8,6 +8,10 @@ const ShoppingCart = styled.div`
   #shopping-cart {
     margin: auto 0 auto 0;
   }
+
+  @media (min-width: 376px) {
+    margin: 0 37px 0 0;
+  }
 `;
 
 export function Cart() {

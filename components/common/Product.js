@@ -7,7 +7,11 @@ const ProductWrapper = styled.div`
   width: 168px;
   height: 200px;
   flex-direction: column;
-  margin: 0 0 18px 0;
+  margin: 0 3px 18px 3px;
+
+  @media (min-width: 900px) {
+    margin: 0 11px 18px 11px;
+  }
 
   > h3 {
     font-weight: normal;

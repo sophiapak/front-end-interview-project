@@ -28,7 +28,7 @@ const MobileMenuIcon = styled.div`
     width: 100%;
   }
 
-  @media (min-width: 376px) {
+  @media (min-width: 776px) {
     display: none;
   }
 `;
@@ -43,19 +43,21 @@ const Menu = styled.nav`
   color: #ffffff;
   background: #ffffff;
 
-  @media (min-width: 376px) {
+  .menu-link {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 42px 0 0;
+  }
+
+  @media (min-width: 776px) {
     display: flex;
     background: none;
     left: initial;
     top: initial;
-    margin: auto 0 auto auto;
+    margin: auto 0 auto 25px;
     position: relative;
     width: initial;
   }
-`;
-
-const ShoppingCart = styled(Cart)`
-  margin: auto 16px auto 0;
 `;
 
 export function Header() {
@@ -69,11 +71,15 @@ export function Header() {
         <div />
       </MobileMenuIcon>
       <Menu open={menuOpen}>
-        <a href="https://foxtrotco.com/stores">Stores</a>
-        <a href="https://foxtrotco.com/contact">Contact Us</a>
+        <a className="menu-link" href="https://foxtrotco.com/stores">
+          Stores
+        </a>
+        <a className="menu-link" href="https://foxtrotco.com/contact">
+          Contact Us
+        </a>
       </Menu>
       <Logo />
-      <ShoppingCart />
+      <Cart />
     </HeaderWrapper>
   );
 }

@@ -3,21 +3,38 @@ import styled from 'styled-components';
 import Product from './Product';
 
 const GroupWrapper = styled.div`
-  margin: 0 16px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 900px) {
+    width: 950px;
+    margin: 0 auto;
+  }
+
+  .product-list {
+    flex: display;
+    justify-content: center;
+  }
 
   .group-name {
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
-    margin: 0 0 16px 0;
+    margin: 0 0 16px 16px;
+
+    @media (min-width: 900px) {
+      margin: 0 0 16px 12px;
+    }
   }
 
   .products-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin: 0 13px 0 13px;
+
+    @media (min-width: 376px) {
+      margin: 0 auto;
+    }
   }
 `;
 
@@ -26,11 +43,11 @@ export function Group({ products }) {
     return products.map((group) => {
       if (group.products.length >= 1) {
         return (
-          <div key={group.id}>
+          <div className="product-list" key={group.id}>
             <h3 className="group-name">{group.name}</h3>
             <div className="products-container">
               {group.products.map((product) => {
-                return <Product data={product} />;
+                return <Product className="product-item" data={product} />;
               })}
             </div>
           </div>

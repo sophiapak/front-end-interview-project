@@ -6,6 +6,7 @@ const App = ({ Component, pageProps }) => {
     <React.Fragment>
       {/* Font styles and basic CSS Reset */}
       <GlobalStyles />
+
       <Header />
       <Component {...pageProps} />
     </React.Fragment>
