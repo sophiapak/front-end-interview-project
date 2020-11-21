@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Cart } from './Cart';
+import Logo from './Logo';
 
 const HeaderWrapper = styled.header`
   position: fixed;
   display: flex;
+  justify-content: space-between;
   height: 56px;
   width: 100%;
   top: 0;
@@ -14,51 +16,64 @@ const HeaderWrapper = styled.header`
 `;
 
 const MobileMenuIcon = styled.div`
-  margin: auto auto auto 0;
+  margin: auto 0 auto 16px;
   width: 16px;
   min-width: 16px;
   height: 16px;
-  padding: 5px;
 
   > div {
     height: 1px;
     background: #ffffff;
-    margin: 6px 0;
+    margin: 0 0 6px 0;
     width: 100%;
+  }
+
+  @media (min-width: 376px) {
+    display: none;
   }
 `;
 
 const Menu = styled.nav`
-  display: block;
+  display: ${(p) => (p.open ? 'block' : 'none')};
   position: absolute;
   width: 100%;
-  top: 0;
+  top: 56px;
   left: 0;
   padding: 8px;
   color: #ffffff;
+  background: #ffffff;
+
+  @media (min-width: 376px) {
+    display: flex;
+    background: none;
+    left: initial;
+    top: initial;
+    margin: auto 0 auto auto;
+    position: relative;
+    width: initial;
+  }
 `;
 
-const Logo = styled.h1`
-  color: #ffffff;
-  margin: auto auto;
-  font-size: 16.85pt;
-  letter-spacing: 0.3rem;
+const ShoppingCart = styled(Cart)`
+  margin: auto 16px auto 0;
 `;
 
 export function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <HeaderWrapper>
-      <MobileMenuIcon>
+      <MobileMenuIcon onClick={() => setMenuOpen((s) => !s)}>
         <div />
         <div />
         <div />
       </MobileMenuIcon>
-      <Menu>
+      <Menu open={menuOpen}>
         <a href="https://foxtrotco.com/stores">Stores</a>
         <a href="https://foxtrotco.com/contact">Contact Us</a>
       </Menu>
-      <Logo>FOXTROT</Logo>
-      <Cart />
+      <Logo />
+      <ShoppingCart />
     </HeaderWrapper>
   );
 }

@@ -1,10 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const ShoppingCart = styled.div`
+  margin: 0 16px 0 0;
+  display: flex;
+
+  #shopping-cart {
+    margin: auto 0 auto 0;
+  }
+`;
+
 export function Cart() {
   return (
-    <React.Fragment>
+    <ShoppingCart>
       <svg
+        id="shopping-cart"
         width="18"
         height="18"
         viewBox="0 0 18 18"
@@ -24,6 +34,6 @@ export function Cart() {
           strokeLinejoin="round"
         />
       </svg>
-    </React.Fragment>
+    </ShoppingCart>
   );
 }
