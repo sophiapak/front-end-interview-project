@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { Header, Hero, Group, Footer, Main } from '../components';
 
-const Index = ({ groups }) => {
+export default function Index({ groups }) {
   return (
     <>
       <Head>
@@ -17,16 +17,14 @@ const Index = ({ groups }) => {
       <Footer />
     </>
   );
-};
+}
 
-Index.getInitialProps = async () => {
+export async function getStaticProps() {
   const data = await fetch(
     'https://api.foxtrotchicago.com/v5/inventory/aisles/224/items?store_id=6'
   );
   const json = await data.json();
   return {
-    groups: json.aisle.groups,
+    props: { groups: json.aisle.groups },
   };
-};
-
-export default Index;
+}

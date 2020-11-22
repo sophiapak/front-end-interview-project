@@ -9,11 +9,26 @@ import { IconWrapper, SocialMediaIcons } from '../styles/SocialBar.styles';
 const SocialBar = () => {
   return (
     <IconWrapper>
-      <SocialMediaIcons src={Blog} alt="Blog Icon" />
-      <SocialMediaIcons src={Facebook} alt="Facebook Icon" />
-      <SocialMediaIcons src={Instagram} alt="Instagram Icon" />
-      <SocialMediaIcons src={Mail} alt="Mail Icon" />
-      <SocialMediaIcons src={Twitter} alt="Twitter Icon" />
+      <SocialMediaIcons src={Blog} alt="Blog Icon" height="24px" width="24px" />
+      <SocialMediaIcons
+        src={Facebook}
+        alt="Facebook Icon"
+        height="24px"
+        width="24px"
+      />
+      <SocialMediaIcons
+        src={Instagram}
+        alt="Instagram Icon"
+        height="24px"
+        width="24px"
+      />
+      <SocialMediaIcons src={Mail} alt="Mail Icon" height="24px" width="24px" />
+      <SocialMediaIcons
+        src={Twitter}
+        alt="Twitter Icon"
+        height="24px"
+        width="24px"
+      />
     </IconWrapper>
   );
 };

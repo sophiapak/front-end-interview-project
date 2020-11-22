@@ -11,13 +11,13 @@ const ProductWrapper = styled.div`
     margin: 0 11px 18px 11px;
   }
 
-  > h3 {
+  > h2 {
     font-weight: normal;
     font-size: 14px;
     margin: 8px 0 0 0;
   }
 
-  > h6 {
+  > h3 {
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;

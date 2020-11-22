@@ -17,7 +17,7 @@ describe('Common', () => {
     it('should render without error', () => {
       expect(wrapper).toBeTruthy();
     });
-    it('should contain a HeroImage', () => {
+    it('should contain 5 Social Media Icons (Blog, Facebook, Instagram, Mail, Twitter)', () => {
       expect(
         wrapper.containsMatchingElement(
           <IconWrapper>

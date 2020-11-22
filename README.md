@@ -1,39 +1,67 @@
+## Table of Contents
+
+- <a href="https://github.com/sophiapak/front-end-interview-project#overview">Overview</a>
+- <a href="https://github.com/sophiapak/front-end-interview-project#getting-started">Getting Started</a>
+- <a href="https://github.com/sophiapak/front-end-interview-project#future-improvements-+-strech-implementations">Future Improvements + Stretch Implementations</a>
+- <a href="https://github.com/sophiapak/front-end-interview-project#provided-references">Provided References</a>
+- <a href="https://github.com/sophiapak/front-end-interview-project#thank-you">Thank you</a>
+
+<br>
+
+## Overview
+
+<br>
 
 ## Getting Started
 
-First, install packages via NPM:
-```bash
-npm install
-```
+1.  Clone this repo to your local machine and point to the corresponding directory:
 
-(We currently use node version v12.13.1, so all packages _should_ run within that verison)
+    ```bash
+    git clone https://github.com/sophiapak/front-end-interview-project.git
 
-Second, run the development server:
+    cd front-end-interview-project
+    ```
 
-```bash
-npm run dev
-```
+2.  Install all required dependencies with the following script:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    ```bash
+    npm install
+    ```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+3.  Run the following script to open the application on http://localhost:3000:
 
-## Good to know
-You will find `styled-components` already installed, this is the preferred method for doing CSS styling at Foxtrot. But, if you feel more comfortable using another method, feel free!
+    ```bash
+    npm run dev
+    ```
 
-## What you'll be doing
+4.  Run the Testing Suite using the following script:
 
-- Investigate the comp: [https://www.figma.com/file/tFhYREeWNPh4F0BqeycV3k/Coding-Test](https://www.figma.com/file/tFhYREeWNPh4F0BqeycV3k/Coding-Test)
-- Scaffold app to your liking
-- Run GET on `https://api.foxtrotchicago.com/v5/inventory/aisles/224/items?store_id=6` to retrieve products and groups
-- Whatever else you think is cool! Don't spend an inordinate amount of time on this, but please do highlight your skills!
+    ```bash
+     npm test
+    ```
 
-## Running into issues?
-- REACH OUT, just like on the job we're always here to help. Feel free to email anytime: kmcdonald@foxtrotco.com
+<br>
 
-## Learn More about Next.js
+## Future Improvements + Stretch Implementations
 
-To learn more about Next.js, take a look at the following resources:
+As prompted, I didn't want to spend an inordinate amount of time but there are quite a few things if I had more time would love to have implemented:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Flush out the Testing Suite with more variety of tests (eg. Integration + End to End)
+- Smoothing the Small Hiccup Alignment in the wrapping of products when the Application Page transitions between the targeted mobile and desktop comps
+- Trying to update the overall page to be more accessibility-friendly (Current Google Lighthouse Accessibility Rating: 89/100)
+- Optimizing the Product Images so it doesn't bottleneck the initial response time
+
+<br>
+
+## Provided References
+
+- Comp: [https://www.figma.com/file/tFhYREeWNPh4F0BqeycV3k/Coding-Test](https://www.figma.com/file/tFhYREeWNPh4F0BqeycV3k/Coding-Test)
+- GET: `https://api.foxtrotchicago.com/v5/inventory/aisles/224/items?store_id=6`
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Learn Next.js](https://nextjs.org/learn)
+
+<br>
+
+## Thank you
+
+I just wanted to say thank you so much Kevin for taking the time to speak with me in our previous zoom call as well as providing this take home opportunity.
