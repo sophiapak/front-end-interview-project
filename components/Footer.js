@@ -2,7 +2,7 @@ import React from 'react';
 import FooterWrapper from './styles/Footer.styles';
 import SocialBar from './common/SocialBar';
 
-function Footer() {
+const Footer = () => {
   return (
     <FooterWrapper>
       <SocialBar />
@@ -19,6 +19,6 @@ function Footer() {
       </div>
     </FooterWrapper>
   );
-}
+};
 
 export default Footer;

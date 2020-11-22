@@ -1,11 +1,13 @@
 import React from 'react';
 import Basket from '../../public/svg/basket-icon.svg';
-import ShoppingCart from '../styles/Cart.styles';
+import { ShoppingCart, BasketIcon } from '../styles/Cart.styles';
 
-export function Cart() {
+const Cart = () => {
   return (
     <ShoppingCart>
-      <img src={Basket} alt="Shopping Basket Icon" />
+      <BasketIcon src={Basket} alt="Shopping Basket Icon" />
     </ShoppingCart>
   );
-}
+};
+
+export { Cart };

@@ -1,7 +1,7 @@
 import React from 'react';
 import { HeroWrapper, PageTitleWrapper, HeroImage } from './styles/Hero.styles';
 
-function Hero() {
+const Hero = () => {
   return (
     <HeroWrapper>
       <div>
@@ -16,6 +16,6 @@ function Hero() {
       </PageTitleWrapper>
     </HeroWrapper>
   );
-}
+};
 
 export default Hero;

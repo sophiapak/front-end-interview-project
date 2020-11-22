@@ -6,7 +6,7 @@ import Mail from '../../public/svg/mail-icon.svg';
 import Twitter from '../../public/svg/twitter-icon.svg';
 import { IconWrapper, SocialMediaIcons } from '../styles/SocialBar.styles';
 
-export default function SocialBar() {
+const SocialBar = () => {
   return (
     <IconWrapper>
       <SocialMediaIcons src={Blog} alt="Blog Icon" />
@@ -16,4 +16,6 @@ export default function SocialBar() {
       <SocialMediaIcons src={Twitter} alt="Twitter Icon" />
     </IconWrapper>
   );
-}
+};
+
+export default SocialBar;

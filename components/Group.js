@@ -2,7 +2,7 @@ import React from 'react';
 import Product from './common/Product';
 import GroupWrapper from './styles/Group.styles';
 
-function Group({ products }) {
+const Group = ({ products }) => {
   function generateProductGroups() {
     return products.map((group) => {
       if (group.products.length >= 1) {
@@ -27,6 +27,6 @@ function Group({ products }) {
   }
 
   return <GroupWrapper>{generateProductGroups()}</GroupWrapper>;
-}
+};
 
 export default Group;

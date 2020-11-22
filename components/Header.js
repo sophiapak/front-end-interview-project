@@ -3,7 +3,7 @@ import { Cart } from './common/Cart';
 import Logo from './common/Logo';
 import { HeaderWrapper, MobileMenuIcon, Menu } from './styles/Header.styles';
 
-function Header() {
+const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -25,6 +25,6 @@ function Header() {
       <Cart />
     </HeaderWrapper>
   );
-}
+};
 
 export default Header;
