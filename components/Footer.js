@@ -1,11 +1,11 @@
 import React from 'react';
 import FooterWrapper from './styles/Footer.styles';
-import SocialIcons from './common/SocialIcons';
+import SocialBar from './common/SocialBar';
 
 function Footer() {
   return (
     <FooterWrapper>
-      <SocialIcons />
+      <SocialBar />
       <div id="footer-menu">
         <a
           className="footer-link"
