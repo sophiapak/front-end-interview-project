@@ -10,6 +10,16 @@
 
 ## Overview
 
+The file is structured with 5 core main files within the `components` folder: `index`, `Hero`, `Header`, `Group` & `Footer`.
+
+Additional supporting components (`Cart`, `Logo`, `Product` & `SocialBar`) can be located in the subfolder called `common`
+
+As for the modularized styling for each corresponding components can be located in the subfolder called `styles`.
+
+All the testing suite files can be located in the `__tests__` folder from the root directory (`__mock__` contains a single file that is used for rendering mock images for the testing suite)
+
+\*\* Additional setup/config files have been added to the root directory for custom configuration for next.js and for testing suite implementation
+
 <br>
 
 ## Getting Started
@@ -44,21 +54,20 @@
 
 ## Future Improvements + Stretch Implementations
 
-As prompted, I didn't want to spend an inordinate amount of time but there are quite a few things if I had more time would love to have implemented:
+As prompted, I didn't spend an inordinate amount of time but there are quite a few things if I had more time would love to have implemented:
 
-- Flush out the Testing Suite with more variety of tests (eg. Integration + End to End)
+- Fleshing out the Testing Suite with more variety of tests (eg. Integration + End to End)
 - Smoothing the Small Hiccup Alignment in the wrapping of products when the Application Page transitions between the targeted mobile and desktop comps
-- Trying to update the overall page to be more accessibility-friendly (Current Google Lighthouse Accessibility Rating: 89/100)
+- Trying to update the overall page to be more accessible - Current Google Lighthouse Accessibility Rating: 89/100 - (eg. Making the Site more Keyboard-Friendly - right now, a user can only access the main navigation menu and the footer links using only with the keyboard)
 - Optimizing the Product Images so it doesn't bottleneck the initial response time
 
 <br>
 
 ## Provided References
 
-- Comp: [https://www.figma.com/file/tFhYREeWNPh4F0BqeycV3k/Coding-Test](https://www.figma.com/file/tFhYREeWNPh4F0BqeycV3k/Coding-Test)
-- GET: `https://api.foxtrotchicago.com/v5/inventory/aisles/224/items?store_id=6`
-- [Next.js Documentation](https://nextjs.org/docs)
-- [Learn Next.js](https://nextjs.org/learn)
+- Design Comp (Mobile + Desktop): [https://www.figma.com/file/tFhYREeWNPh4F0BqeycV3k/Coding-Test](https://www.figma.com/file/tFhYREeWNPh4F0BqeycV3k/Coding-Test)
+- GET (Product Data + Images): `https://api.foxtrotchicago.com/v5/inventory/aisles/224/items?store_id=6`
+- Next.js Reference Material: [Learn Next.js](https://nextjs.org/learn) & [Next.js Documentation](https://nextjs.org/docs)
 
 <br>
 
