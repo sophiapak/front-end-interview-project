@@ -6,3 +6,4 @@ export { default as Header } from './Header';
 export { default as Hero } from './Hero';
 export { default as Group } from './Group';
 export { default as Footer } from './Footer';
+export { default as Main } from './styles/Main.styles';

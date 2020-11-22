@@ -1,19 +1,9 @@
 import Head from 'next/head';
-import styled from 'styled-components';
-import { Header, Hero, Group, Footer } from '../components';
-
-const Main = styled.main`
-  margin: 0 auto;
-
-  @media (min-width: 768px) {
-    max-width: 765px;
-    margin: 0 auto;
-  }
-`;
+import { Header, Hero, Group, Footer, Main } from '../components';
 
 const Index = ({ groups }) => {
   return (
-    <div>
+    <>
       <Head>
         <title>Foxtrot</title>
         <link rel="icon" href="/favicon.ico" />
@@ -25,7 +15,7 @@ const Index = ({ groups }) => {
         <Group products={groups} />
       </Main>
       <Footer />
-    </div>
+    </>
   );
 };
 
