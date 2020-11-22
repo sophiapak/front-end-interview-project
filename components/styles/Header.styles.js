@@ -31,20 +31,16 @@ const MobileMenuIcon = styled.div`
 `;
 
 const Menu = styled.nav`
-  display: ${(p) => (p.open ? 'block' : 'none')};
+  display: ${(p) => (p.open ? 'flex' : 'none')};
+  flex-direction: ${(p) => (p.open ? 'column' : 'row')};
   position: absolute;
   width: 100%;
   top: 56px;
   left: 0;
-  padding: 8px;
+  padding: 20px 0;
   color: #ffffff;
-  background: #ffffff;
-
-  .menu-link {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0 42px 0 0;
-  }
+  background: #121212;
+  border-top: 1px solid #ffffff;
 
   @media (min-width: 768px) {
     display: flex;
@@ -52,8 +48,22 @@ const Menu = styled.nav`
     left: initial;
     top: initial;
     margin: auto 0 auto 25px;
+    padding: 0;
     position: relative;
     width: initial;
+    border: none;
+  }
+
+  .menu-link {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 10px auto;
+    font-size: 36px;
+
+    @media (min-width: 768px) {
+      margin: 0 42px 0 0;
+      font-size: 16px;
+    }
   }
 `;
 

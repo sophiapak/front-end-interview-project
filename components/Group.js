@@ -3,7 +3,7 @@ import Product from './common/Product';
 import GroupWrapper from './styles/Group.styles';
 
 const Group = ({ products }) => {
-  function generateProductGroups() {
+  const generateProductGroups = () => {
     return products.map((group) => {
       if (group.products.length >= 1) {
         return (
@@ -24,7 +24,7 @@ const Group = ({ products }) => {
         );
       }
     });
-  }
+  };
 
   return <GroupWrapper>{generateProductGroups()}</GroupWrapper>;
 };

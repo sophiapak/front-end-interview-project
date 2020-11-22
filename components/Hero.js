@@ -5,7 +5,10 @@ const Hero = () => {
   return (
     <HeroWrapper>
       <div>
-        <HeroImage src={require('../public/images/hero-image.jpg')} />
+        <HeroImage
+          src={require('../public/images/hero-image.jpg')}
+          alt="Discover Aisle Hero Banner"
+        />
       </div>
       <PageTitleWrapper>
         <h1>Discover Aisle</h1>
