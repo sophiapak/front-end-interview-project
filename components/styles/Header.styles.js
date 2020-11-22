@@ -1,7 +1,4 @@
-import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Cart } from './Cart';
-import Logo from './Logo';
 
 const HeaderWrapper = styled.header`
   position: fixed;
@@ -60,26 +57,4 @@ const Menu = styled.nav`
   }
 `;
 
-export function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  return (
-    <HeaderWrapper>
-      <MobileMenuIcon onClick={() => setMenuOpen((s) => !s)}>
-        <div />
-        <div />
-        <div />
-      </MobileMenuIcon>
-      <Menu open={menuOpen}>
-        <a className="menu-link" href="https://foxtrotco.com/stores">
-          Stores
-        </a>
-        <a className="menu-link" href="https://foxtrotco.com/contact">
-          Contact Us
-        </a>
-      </Menu>
-      <Logo />
-      <Cart />
-    </HeaderWrapper>
-  );
-}
+export { HeaderWrapper, MobileMenuIcon, Menu };

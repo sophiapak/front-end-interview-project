@@ -1,14 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Instagram } from '@styled-icons/remix-fill/Instagram';
 
 const IconWrapper = styled.div`
   margin: 40px auto 0 auto;
   display: flex;
 `;
 
+const InstagramIcon = styled(Instagram)`
+  color: #121212;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 6px;
+`;
+
 export default function SocialIcons() {
   return (
     <IconWrapper>
+      <InstagramIcon size="14" />
       <svg
         width="216"
         height="24"

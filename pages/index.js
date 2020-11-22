@@ -3,11 +3,10 @@ import styled from 'styled-components';
 import { Header, Hero, Group, Footer } from '../components';
 
 const Main = styled.main`
-  margin: 56px 0 0 0;
-  width: 100%;
+  margin: 0 auto;
 
   @media (min-width: 768px) {
-    width: 950px;
+    max-width: 765px;
     margin: 0 auto;
   }
 `;
@@ -29,12 +28,6 @@ const Index = ({ groups }) => {
     </div>
   );
 };
-
-// TARGETS GROUPS (an array of objects)
-// object.aisle.groups => objects[]
-
-// TARGETS PRODUCTS FROM EACH GROUP (an array of objects)
-// groups[i].products
 
 Index.getInitialProps = async () => {
   const data = await fetch(
