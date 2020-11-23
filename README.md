@@ -1,10 +1,10 @@
 ## Table of Contents
 
-- <a href="https://github.com/sophiapak/front-end-interview-project#overview">Overview</a>
-- <a href="https://github.com/sophiapak/front-end-interview-project#getting-started">Getting Started</a>
-- <a href="https://github.com/sophiapak/front-end-interview-project#future-improvements-+-strech-implementations">Future Improvements + Stretch Implementations</a>
-- <a href="https://github.com/sophiapak/front-end-interview-project#provided-references">Provided References</a>
-- <a href="https://github.com/sophiapak/front-end-interview-project#thank-you">Thank you</a>
+- <a href="https://github.com/sophiapak/front-end-interview-project/tree/beta#overview">Overview</a>
+- <a href="https://github.com/sophiapak/front-end-interview-project/tree/beta#getting-started">Getting Started</a>
+- <a href="https://github.com/sophiapak/front-end-interview-project/tree/beta#future-improvements--stretch-implementations">Future Improvements + Stretch Implementations</a>
+- <a href="https://github.com/sophiapak/front-end-interview-project/tree/beta#provided-references">Provided References</a>
+- <a href="https://github.com/sophiapak/front-end-interview-project/tree/beta#thank-you">Thank you</a>
 
 <br>
 
